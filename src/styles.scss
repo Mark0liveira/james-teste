@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/assets/variables.scss";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $gray-light;
+}
+
+.content-router {
+    margin: 15px 0;
+}
+
+.img-small {
+    width: $medium-size;
+}
+
+#menu {
+    height: calc(10vh);
+    min-height: $medium-size;
+    background-color: $white;
+}
+
+mat-card {
+    background-color: $white;
+    width: 70vw;
+    border-radius: $medium-border-radius;
+}
