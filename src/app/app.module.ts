@@ -9,6 +9,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialBaseModule } from './shared/material/material-base/material-base.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { establishmentReducer } from 'src/app/shared/reducers/establishment.reducer';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     MaterialBaseModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    StoreModule.forRoot({ establishment: establishmentReducer })
   ],
   providers: [],
   bootstrap: [AppComponent],
