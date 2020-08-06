@@ -1,1 +1,49 @@
-<p>establishments-details works!</p>
+<div class="content-router" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="15px">
+    <mat-card fxLayoutGap="25px" fxLayout="column">
+        <!--Header card-->
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+            <mat-icon [routerLink]="['/establishments/list']" routerLinkActive="router-link-active" >keyboard_backspace</mat-icon>
+            <img class="establishment-picture"
+            src="http://placehold.it/32x32" alt="" srcset="">
+            <h4>Teste</h4>
+        </div>
+
+        <!--Informações básicas-->
+        <div>
+            <div>
+                <h4 class="informacoes">Informações Básicas</h4>
+            </div>
+            <mat-divider></mat-divider>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-evenly stretch" fxLayout.lt-md="column"
+        fxLayoutAlign.lt-md="center stretch" fxLayoutGap="15px">
+            <form [formGroup]="form">
+                <mat-form-field class="example-full-width">
+                <mat-label>Favorite food</mat-label>
+                <input matInput>
+                </mat-form-field>
+            
+                <mat-form-field class="example-full-width">
+                <mat-label>Leave a comment</mat-label>
+                <input matInput>
+                </mat-form-field>
+            </form>
+        </div>
+
+        <!--Informações financeiras-->
+        <div>
+            <div>
+                <h4 class="informacoes">Informações Financeiras</h4>
+            </div>
+            <mat-divider></mat-divider>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column"
+        fxLayoutAlign.lt-md="center stretch" fxLayoutGap="15px">
+            
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column"
+        fxLayoutAlign.lt-md="center stretch" fxLayoutGap="15px">
+            
+        </div>
+    </mat-card>
+</div>

@@ -1,6 +1,6 @@
 <div class="content-router" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="15px">
     <!--Lista de estabelecimentos vinculados-->
-    <mat-card *ngFor="let establishment of establishments" fxLayout="row" 
+    <mat-card (click)="rowClick(establishment)" *ngFor="let establishment of establishments" fxLayout="row" 
     fxLayoutGap="15px" fxFlexAlign="center center">
         <div fxFlex fxLayout="column" fxFlexAlign="center center" fxLayoutGap="15px" fxLayout.gt-xs="row">
             <!--Imagem Estabelecimento-->

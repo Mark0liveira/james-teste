@@ -1,6 +1,7 @@
 import { EstablishmentService } from './../../../shared/services/establishment.service';
 import { EstablishmentInterface } from './../../../shared/interfaces/establishments.interface';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   templateUrl: './establishments.component.html',
@@ -10,7 +11,8 @@ export class EstablishmentsComponent implements OnInit {
 
   public establishments: EstablishmentInterface;
 
-  constructor(public establishmentService: EstablishmentService) { }
+  constructor(public establishmentService: EstablishmentService,
+              public router: Router) { }
 
   ngOnInit(): void {
     this.getEstablishments();
@@ -22,6 +24,10 @@ export class EstablishmentsComponent implements OnInit {
         console.log(res);
         this.establishments = res;
       });
+  }
+
+  public rowClick(establishment): void {
+    this.router.navigate([`establishments/details`]);
   }
 
 }

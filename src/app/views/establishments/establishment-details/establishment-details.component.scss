@@ -1,0 +1,29 @@
+@import "src/assets/variables.scss";
+
+mat-card {
+    height: calc(70vh);
+    padding: 40px;
+    min-height: 600px;
+}
+
+.establishment-picture {
+    border-radius: $small-border-radius;
+    width: $big-size;
+}
+
+.informacoes {
+    font-weight: 400;
+}
+
+mat-divider {
+    color: $gray-medium;
+}
+
+.mat-card .mat-divider-horizontal {
+    position: relative;
+}
+
+mat-icon {
+    cursor: pointer;
+    outline: none;
+}

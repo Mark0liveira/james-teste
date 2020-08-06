@@ -7,7 +7,8 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EstablishmentService } from 'src/app/shared/services/establishment.service';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EstablishmentService } from 'src/app/shared/services/establishment.serv
     RouterModule.forChild(EstablishmentRoutes),
     CommonModule,
     MaterialBaseModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   declarations: [EstablishmentsComponent, EstablishmentsDetailsComponent],
   exports: [EstablishmentsComponent, EstablishmentsDetailsComponent],

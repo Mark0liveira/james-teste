@@ -19,10 +19,15 @@ body {
     height: calc(10vh);
     min-height: $medium-size;
     background-color: $white;
+    margin-bottom: 40px;
 }
 
 mat-card {
     background-color: $white;
     width: 70vw;
     border-radius: $medium-border-radius;
+}
+
+h4 {
+    color: $hunt_darker;
 }
